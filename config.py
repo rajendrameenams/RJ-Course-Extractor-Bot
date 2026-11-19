@@ -9,10 +9,11 @@
 import os
 
 def clean_env(key: str, default: str = "") -> str:
-    val = os.environ.get(key, default)
+    val = os.environ.get(key)
     if val is None:
         return default
-    return str(val).strip().strip('"\'')
+    cleaned = str(val).strip().strip('"\'')
+    return cleaned if cleaned else default
 
 api_id_raw = clean_env("API_ID", "34239723")
 api_hash = clean_env("API_HASH", "966261d7f23f48f7765f2b2a0f7ee548")

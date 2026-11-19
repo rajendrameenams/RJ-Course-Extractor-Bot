@@ -7,8 +7,8 @@ services:
     expose:
       - "8080"
     environment:
-      - API_ID=${API_ID}
-      - API_HASH=${API_HASH}
-      - BOT_TOKEN=${BOT_TOKEN}
-      - AUTH_USERS=${AUTH_USERS}
-      - PORT=8080
+      - API_ID=${API_ID:-34239723}
+      - API_HASH=${API_HASH:-966261d7f23f48f7765f2b2a0f7ee548}
+      - BOT_TOKEN=${BOT_TOKEN:-9053502415:AAGtW2zcBh51bsQvsswfsP570fA30OHKsqk}
+      - AUTH_USERS=${AUTH_USERS:-8844885567}
+      - PORT=${PORT:-8080}
