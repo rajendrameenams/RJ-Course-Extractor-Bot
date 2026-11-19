@@ -15,7 +15,11 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 # --- WEB HEALTH CHECK SERVER ---
 def run_web():
-    port = int(os.environ.get("PORT", 8080))
+    port_env = os.environ.get("PORT", "8080")
+    try:
+        port = int(str(port_env).strip().strip('"\'')) if port_env else 8080
+    except Exception:
+        port = 8080
     try:
         from flask import Flask
         app = Flask(__name__)
