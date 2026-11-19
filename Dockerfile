@@ -1,5 +1,5 @@
-# Use official lightweight Python image
-FROM python:3.12-slim
+# Use official lightweight Python 3.11 image (Required for Pyrogram / Kurigram & Pyromod stability)
+FROM python:3.11-slim
 
 # Avoid writing .pyc files & force unbuffered stdout/stderr (crucial for real-time Docker/Coolify logs)
 ENV PYTHONDONTWRITEBYTECODE=1 \

@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" alt="Python 3.12">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python" alt="Python 3.11">
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker" alt="Docker Ready">
   <img src="https://img.shields.io/badge/Coolify-Compatible-6366f1" alt="Coolify Ready">
   <img src="https://img.shields.io/badge/License-Protected-red" alt="License">
